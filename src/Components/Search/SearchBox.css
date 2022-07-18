@@ -1,0 +1,23 @@
+.form-search {
+  position: relative;
+}
+.search-box {
+  -webkit-appearance: none;
+  background-color: #f9f7f6;
+  /* color: #111; */
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  padding: 5px 30px 5px 50px;
+  width: 350px;
+  line-height: 30px;
+  /* padding-left: 50px;
+  padding-right: 30px; */
+}
+.search-logo {
+  position: absolute;
+  top: 13%;
+  left: 4%;
+  opacity: 0.6;
+  width: 30px;
+}
