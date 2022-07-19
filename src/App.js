@@ -16,7 +16,6 @@ const App = () => {
   const [sort, setSort] = useState("false");
   const [ascArray, setAscArray] = useState([]);
   const [dscArray, setDscArray] = useState([]);
-  
 
   //getting search value from UI and updating the searchField state
   const onSearchHandler = (e) => {
