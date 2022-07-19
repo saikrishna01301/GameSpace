@@ -5,7 +5,7 @@ const SearchBox = (props) => {
     <form className="form-search">
       <SearchLogo className="search-logo" />
       <input
-        autocomplete="on"
+        autoComplete="on"
         type="search"
         className={`search-box ${props.className}`}
         placeholder={props.placeholder}

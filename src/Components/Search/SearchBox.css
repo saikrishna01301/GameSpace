@@ -13,9 +13,12 @@
   line-height: 30px;
   /* padding-left: 50px;
   padding-right: 30px; */
+  /* opacity: 0.6; */
+  font-size: 15px;
 }
 .search-logo {
   position: absolute;
+  /* color: #111; */
   top: 13%;
   left: 4%;
   opacity: 0.6;

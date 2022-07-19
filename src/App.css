@@ -45,20 +45,3 @@ body {
   margin: 3% auto;
 } */
 
-.arrow-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 50%;
-  background-color: #fff;
-  border-radius: 10px;
-  margin: 1% auto;
-  text-transform: uppercase;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.arrow {
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
-}
