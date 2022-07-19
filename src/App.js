@@ -41,7 +41,7 @@ const App = () => {
 
   //arrowUp(ascending order) sorting
   const onArrowUpClickHandler = () => {
-    console.log("onArrowUpClick");
+    // console.log("onArrowUpClick");
     const newFilteredArray = gamesList.sort((a, b) => {
       return a.score - b.score;
     });
@@ -51,7 +51,7 @@ const App = () => {
 
   //arrowDown(descending order) sorting
   const onArrowDownClickHandler = () => {
-    console.log("onArrowDownClick");
+    // console.log("onArrowDownClick");
     const newFilteredArray = gamesList.sort((a, b) => {
       return b.score - a.score;
     });
@@ -73,6 +73,20 @@ const App = () => {
         break;
     }
   };
+
+  useEffect(() => {
+    const newFilteredArray = ascArray.filter((games) => {
+      return games.title.toLowerCase().includes(searchField);
+    });
+    setAscArray(newFilteredArray);
+  }, [searchField]);
+
+  useEffect(() => {
+    const newFilteredArray = dscArray.filter((games) => {
+      return games.title.toLowerCase().includes(searchField);
+    });
+    setDscArray(newFilteredArray);
+  }, [searchField]);
   //////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////
   return (
