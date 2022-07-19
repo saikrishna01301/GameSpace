@@ -1,0 +1,1 @@
+https://yourgamespace.netlify.app
