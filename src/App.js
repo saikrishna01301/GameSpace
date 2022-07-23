@@ -43,7 +43,7 @@ const App = () => {
   const onArrowUpClickHandler = () => {
     // console.log("onArrowUpClick");
     const newFilteredArray = gamesList.sort((a, b) => {
-      return a.score - b.score;
+      return b.score - a.score;
     });
     setSort("asc");
     setAscArray(newFilteredArray);
@@ -53,7 +53,7 @@ const App = () => {
   const onArrowDownClickHandler = () => {
     // console.log("onArrowDownClick");
     const newFilteredArray = gamesList.sort((a, b) => {
-      return b.score - a.score;
+      return a.score - b.score;
     });
     setSort("dsc");
     setDscArray(newFilteredArray);
